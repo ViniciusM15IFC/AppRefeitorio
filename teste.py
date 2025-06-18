@@ -11,5 +11,4 @@ with pdfplumber.open("cardapio_junho.pdf") as pdf:
     pd.set_option('display.max_columns', None)
 
     print(df)
-    df.to_csv('tabela.csv', index=False)
 
