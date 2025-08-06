@@ -1,6 +1,7 @@
 import pandas as pd
 import pdfplumber
 import log_cardapio as log
+from collections import defaultdict
 
 logger = log.setup_logger()
 
@@ -31,7 +32,7 @@ def processar_pagina(page, page_num):
             elif line.upper() == 'RECESSO' and current_day:
                 recesso_dias[current_day] = True
                 logger.info(f"Marcado recesso para: {current_day}")
-        
+
         # Processamento das tabelas
         if not tables:
             logger.warning("Nenhuma tabela encontrada na página!")
@@ -73,10 +74,40 @@ def processar_pagina(page, page_num):
         df = pd.DataFrame(adjusted_body, columns=['Categoria'] + day_names)
         df['Categoria'] = df['Categoria'].ffill().str.strip()
         logger.info(f"DataFrame criado com {len(df)} linhas")
-        
-        # Transformação para formato por dia
-        df_t = df.set_index('Categoria').T.reset_index()
-        df_t = df_t.rename(columns={'index': 'Dia'})
+
+        # Verificação de categorias duplicadas
+        if df['Categoria'].duplicated().any():
+            logger.warning(f"Categorias duplicadas encontradas na página {page_num}")
+            logger.debug(f"Categorias: {df['Categoria'].unique()}")
+
+        # Transformação para formato longo usando melt
+        df_melted = df.melt(id_vars=['Categoria'], 
+                        var_name='Dia', 
+                        value_name='Refeição')
+
+        # Remove valores vazios/nulos e espaços em branco
+        df_melted['Refeição'] = df_melted['Refeição'].apply(
+            lambda x: x.strip() if isinstance(x, str) else x
+        )
+        df_melted = df_melted.dropna(subset=['Refeição'])
+
+        # Agrupa e combina os valores duplicados com " e "
+        df_agrupado = df_melted.groupby(['Dia', 'Categoria'])['Refeição'].agg(
+            lambda x: ' e '.join(filter(None, x))
+        ).reset_index()
+
+        # Pivot para o formato final
+        try:
+            df_t = df_agrupado.pivot(index='Dia', columns='Categoria', values='Refeição').reset_index()
+            df_t.columns.name = None  # Remove o nome das colunas
+            
+            logger.info("Valores duplicados foram combinados com 'e'")
+        except Exception as e:
+            logger.error(f"Erro ao pivotar: {str(e)}")
+            logger.debug(f"Dados problemáticos:\n{df_agrupado}")
+            return pd.DataFrame()   
+        df_t.columns.name = None
+        df_t.columns.name = None  # Remove o nome das colunas
         
         # Aplicação de recessos
         logger.info("Aplicando recessos...")
@@ -84,7 +115,8 @@ def processar_pagina(page, page_num):
             if is_recesso:
                 dia_base = dia.split(',')[0].strip().lower()
                 mask = df_t['Dia'].str.strip().str.lower().str.startswith(dia_base)
-                df_t.loc[mask, df_t.columns[1:]] = 'RECESSO'
+                for col in df_t.columns[1:]:
+                    df_t.loc[mask, col] = 'RECESSO'
                 logger.info(f"Aplicado RECESSO para {dia}")
         
         # Adição de metadados
@@ -98,28 +130,41 @@ def processar_pagina(page, page_num):
         logger.error(f"ERRO no processamento da página {page_num}: {str(e)}", exc_info=True)
         return pd.DataFrame()
 
-# Função principal para processar todas as páginas
 def processar_pdf(pdf_path):
-    logger.info(f"\n{'#'*60}\nINICIANDO PROCESSAMENTO DO ARQUIVO: {pdf_path}\n{'#'*60}")
-    
-    dfs = []
-    with pdfplumber.open(pdf_path) as pdf:
-        total_paginas = len(pdf.pages)
-        logger.info(f"Total de páginas no PDF: {total_paginas}")
+    try:
+        logger.info(f"\n{'#'*60}\nINICIANDO PROCESSAMENTO DO ARQUIVO: {pdf_path}\n{'#'*60}")
         
-        for i, page in enumerate(pdf.pages, 1):
-            df_pag = processar_pagina(page, i)
-            if not df_pag.empty:
-                dfs.append(df_pag)
-            else:
-                logger.warning(f"Página {i} retornou DataFrame vazio")
-    
-    if dfs:
-        df_final = pd.concat(dfs, ignore_index=True)
-        logger.info(f"\n{'#'*60}\nPROCESSAMENTO CONCLUÍDO!\nTotal de páginas processadas: {len(dfs)}\nTotal de registros: {len(df_final)}\n{'#'*60}")
-        logger.info("\nResumo do DataFrame Final:\n" + str(df_final.head()))
-        return df_final
-    else:
-        logger.error("Nenhum dado válido foi processado!")
+        dfs = []
+        with pdfplumber.open(pdf_path) as pdf:
+            total_paginas = len(pdf.pages)
+            logger.info(f"Total de páginas no PDF: {total_paginas}")
+            
+            for i, page in enumerate(pdf.pages, 1):
+                df_pag = processar_pagina(page, i)
+                if not df_pag.empty:
+                    # Verifica e remove duplicatas antes de adicionar à lista
+                    if df_pag.duplicated().any():
+                        logger.warning(f"Removendo linhas duplicadas da página {i}")
+                        df_pag = df_pag.drop_duplicates()
+                    dfs.append(df_pag)
+                else:
+                    logger.warning(f"Página {i} retornou DataFrame vazio")
+        
+        if dfs:
+            # Concatena garantindo índices únicos
+            df_final = pd.concat(dfs, ignore_index=True)
+            
+            logger.info(f"\n{'#'*60}\nPROCESSAMENTO CONCLUÍDO!")
+            logger.info(f"Total de páginas processadas: {len(dfs)}")
+            logger.info(f"Total de registros: {len(df_final)}")
+            logger.info(f"{'#'*60}")
+            logger.info("\nResumo do DataFrame Final:\n" + str(df_final.head()))
+            
+            return df_final
+        else:
+            logger.error("Nenhum dado válido foi processado!")
+            return pd.DataFrame()
+            
+    except Exception as e:
+        logger.error(f"Falha no processamento do PDF: {str(e)}", exc_info=True)
         return pd.DataFrame()
-
