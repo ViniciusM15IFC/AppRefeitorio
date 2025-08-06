@@ -1,81 +1,125 @@
 import pandas as pd
-from collections import defaultdict
+import pdfplumber
+import log_cardapio as log
 
-def processar_pagina(page):
-    text = page.extract_text()
-    tables = page.extract_tables()
+logger = log.setup_logger()
+
+def processar_pagina(page, page_num):
+    try:
+        logger.info(f"\n{'='*50}\nIniciando processamento da página {page_num}\n{'='*50}")
+        
+        # Extração do texto
+        text = page.extract_text() or ""
+        logger.info(f"Texto extraído (primeiros 200 chars): {text[:200]}...")
+        
+        # Extração de tabelas
+        tables = page.extract_tables() or []
+        logger.info(f"Encontradas {len(tables)} tabelas na página {page_num}")
+        
+        # Processamento de recessos
+        lines = [line.strip() for line in text.split('\n') if line.strip()]
+        recesso_dias = {}
+        current_day = None
+        weekdays = ['segunda', 'terça', 'quarta', 'quinta', 'sexta']
+        
+        logger.info("Procurando por dias de recesso...")
+        for line in lines:
+            if any(line.lower().split()[0].lower() == wd for wd in weekdays):
+                current_day = line
+                recesso_dias[current_day] = False
+                logger.info(f"Encontrado dia: {current_day}")
+            elif line.upper() == 'RECESSO' and current_day:
+                recesso_dias[current_day] = True
+                logger.info(f"Marcado recesso para: {current_day}")
+        
+        # Processamento das tabelas
+        if not tables:
+            logger.warning("Nenhuma tabela encontrada na página!")
+            return pd.DataFrame()
+            
+        if len(tables[0]) < 2:
+            logger.warning("Estrutura de tabela inesperada - menos de 2 linhas no header")
+            return pd.DataFrame()
+        
+        header0 = tables[0]
+        day_indices = [1, 4, 7, 10, 13]
+        day_names = []
+        
+        logger.info("Processando cabeçalhos dos dias...")
+        for idx in day_indices:
+            part1 = header0[0][idx] if idx < len(header0[0]) else ""
+            part2 = header0[1][idx] if idx < len(header0[1]) else ""
+            day_name = f"{part1} {part2}".strip()
+            day_names.append(day_name)
+            logger.debug(f"Índice {idx}: {day_name}")
+        
+        if len(day_names) != 5:
+            logger.error(f"Número incorreto de dias encontrados: {len(day_names)}")
+            return pd.DataFrame()
+
+        # Processamento do corpo da tabela
+        logger.info("Processando corpo da tabela...")
+        body_raw = [row for table in tables[1:] for row in table if row]
+        clean_body = [row for row in body_raw if any(cell and str(cell).strip() for cell in row)]
+        logger.info(f"Encontradas {len(clean_body)} linhas de dados")
+        
+        def adjust_row(row):
+            row = list(row) + [None] * (7 - len(row))
+            if (not row[5] or str(row[5]).strip() == "") and row[6] and str(row[6]).strip():
+                row[5] = row[6]
+            return row[:6]
+            
+        adjusted_body = [adjust_row(row) for row in clean_body if len(row) >= 6]
+        df = pd.DataFrame(adjusted_body, columns=['Categoria'] + day_names)
+        df['Categoria'] = df['Categoria'].ffill().str.strip()
+        logger.info(f"DataFrame criado com {len(df)} linhas")
+        
+        # Transformação para formato por dia
+        df_t = df.set_index('Categoria').T.reset_index()
+        df_t = df_t.rename(columns={'index': 'Dia'})
+        
+        # Aplicação de recessos
+        logger.info("Aplicando recessos...")
+        for dia, is_recesso in recesso_dias.items():
+            if is_recesso:
+                dia_base = dia.split(',')[0].strip().lower()
+                mask = df_t['Dia'].str.strip().str.lower().str.startswith(dia_base)
+                df_t.loc[mask, df_t.columns[1:]] = 'RECESSO'
+                logger.info(f"Aplicado RECESSO para {dia}")
+        
+        # Adição de metadados
+        df_t['Pagina'] = page_num
+        df_t['Arquivo'] = "cardapio_junho.pdf"
+        
+        logger.info(f"Processamento da página {page_num} concluído com sucesso!")
+        return df_t
+        
+    except Exception as e:
+        logger.error(f"ERRO no processamento da página {page_num}: {str(e)}", exc_info=True)
+        return pd.DataFrame()
+
+# Função principal para processar todas as páginas
+def processar_pdf(pdf_path):
+    logger.info(f"\n{'#'*60}\nINICIANDO PROCESSAMENTO DO ARQUIVO: {pdf_path}\n{'#'*60}")
     
-    # Extrai todas as linhas de texto para identificar recessos
-    lines = [line.strip() for line in text.split('\n') if line.strip()]
+    dfs = []
+    with pdfplumber.open(pdf_path) as pdf:
+        total_paginas = len(pdf.pages)
+        logger.info(f"Total de páginas no PDF: {total_paginas}")
+        
+        for i, page in enumerate(pdf.pages, 1):
+            df_pag = processar_pagina(page, i)
+            if not df_pag.empty:
+                dfs.append(df_pag)
+            else:
+                logger.warning(f"Página {i} retornou DataFrame vazio")
     
-    # Dicionário para mapear dias com recesso
-    recesso_dias = {}
-    current_day = None
-    
-    for line in lines:
-        # Detecta linhas que começam com dias da semana
-        if any(line.lower().startswith(weekday) for weekday in ['segunda', 'terça', 'quarta', 'quinta', 'sexta']):
-            current_day = line
-            recesso_dias[current_day] = False
-        elif line == 'RECESSO' and current_day:
-            recesso_dias[current_day] = True
+    if dfs:
+        df_final = pd.concat(dfs, ignore_index=True)
+        logger.info(f"\n{'#'*60}\nPROCESSAMENTO CONCLUÍDO!\nTotal de páginas processadas: {len(dfs)}\nTotal de registros: {len(df_final)}\n{'#'*60}")
+        logger.info("\nResumo do DataFrame Final:\n" + str(df_final.head()))
+        return df_final
+    else:
+        logger.error("Nenhum dado válido foi processado!")
+        return pd.DataFrame()
 
-    # Processa tabelas normalmente
-    header0 = tables[0]
-    day_indices = [1, 4, 7, 10, 13]
-    day_names = []
-    
-    for idx in day_indices:
-        part1 = header0[0][idx] if idx < len(header0[0]) else ""
-        part2 = header0[1][idx] if idx < len(header0[1]) else ""
-        combined = f"{part1} {part2}".strip()
-        day_names.append(combined)
-    
-    if len(day_names) != 5:
-        return None
-
-    colunas_finais = ['Categoria'] + day_names
-
-    # Processa o corpo das tabelas
-    body_raw = [row for table in tables[1:] for row in table]
-    clean_body = [row for row in body_raw if row and any(cell and cell.strip() for cell in row)]
-
-    def adjust_row(row):
-        row = row + [None] * (7 - len(row))
-        if (not row[5] or row[5].strip() == "") and row[6] and row[6].strip() != "":
-            row[5] = row[6]
-        return row[:6]
-
-    adjusted_body = [adjust_row(row) for row in clean_body if len(row) >= 6]
-    df = pd.DataFrame(adjusted_body, columns=colunas_finais)
-    df['Categoria'] = df['Categoria'].ffill()
-
-    # Transforma para formato por dia
-    df_t = df.set_index('Categoria').T.reset_index()
-    df_t = df_t.rename(columns={'index': 'Dia'})
-
-    # Aplica recessos
-    for dia, is_recesso in recesso_dias.items():
-        if is_recesso:
-            # Encontra a linha correspondente ao dia de recesso
-            mask = df_t['Dia'].str.contains(dia.split(',')[0], case=False, na=False)
-            # Substitui todas as categorias por 'RECESSO'
-            for col in df_t.columns[1:]:
-                df_t.loc[mask, col] = 'RECESSO'
-
-    agrupadas = defaultdict(list)
-    for col in df_t.columns[1:]:
-        agrupadas[col].append(col)
-
-    df_agrupado = pd.DataFrame()
-    df_agrupado['Dia'] = df_t['Dia']
-
-    for categoria, col_list in agrupadas.items():
-        if len(col_list) == 1:
-            df_agrupado[categoria] = df_t[col_list[0]]
-        else:
-            df_agrupado[categoria] = df_t[col_list].apply(
-                lambda row: ' e '.join(dict.fromkeys(filter(None, row))), axis=1
-            )
-
-    return df_agrupado
