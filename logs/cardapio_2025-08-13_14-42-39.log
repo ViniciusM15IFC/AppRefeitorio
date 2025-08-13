@@ -1,0 +1,296 @@
+2025-08-13 14:42:39 (BRT) - INFO - 
+############################################################
+INICIANDO PROCESSAMENTO DO ARQUIVO: cardapio_junho.pdf
+############################################################
+2025-08-13 14:42:39 (BRT) - INFO - Total de páginas no PDF: 4
+2025-08-13 14:42:39 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 1
+==================================================
+2025-08-13 14:42:39 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+segunda-feira, 2 de junho de terça-feira, 3 de junho de quarta-feira, 4 de junho quinta-feira, 5 de sexta-feira, 6 de junho
+2025 2025 de 2025 junho de 2025 de 2025
+Acelga...
+2025-08-13 14:42:39 (BRT) - INFO - Encontradas 2 tabelas na página 1
+2025-08-13 14:42:39 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:42:39 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 1: segunda-feira, 2 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 4: terça-feira, 3 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 7: quarta-feira, 4 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 10: quinta-feira, 5 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 13: sexta-feira, 6 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Dias únicos após limpeza: ['segunda-feira, 2 de junho de 2025', 'terça-feira, 3 de junho de 2025', 'quarta-feira, 4 de junho de 2025', 'quinta-feira, 5 de junho de 2025', 'sexta-feira, 6 de junho de 2025']
+2025-08-13 14:42:39 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:42:39 (BRT) - INFO - Encontradas 8 linhas de dados
+2025-08-13 14:42:39 (BRT) - INFO - DataFrame criado com 8 linhas
+2025-08-13 14:42:39 (BRT) - WARNING - Categorias duplicadas encontradas na página 1
+2025-08-13 14:42:39 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:42:39 (BRT) - INFO - Criando pivot...
+2025-08-13 14:42:39 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:42:39 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:42:39 (BRT) - INFO - Processamento da página 1 concluído com sucesso!
+2025-08-13 14:42:39 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 2
+==================================================
+2025-08-13 14:42:39 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+segunda-feira, 9 de junho terça-feira, 10 de junho de quarta-feira, 11 de junho quinta-feira, 12 de sexta-feira, 13 de junho
+de 2025 2025 de 2025 junho de 2025 de 2025
+Ac...
+2025-08-13 14:42:39 (BRT) - INFO - Encontradas 6 tabelas na página 2
+2025-08-13 14:42:39 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:42:39 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 1: segunda-feira, 9 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 4: terça-feira, 10 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 7: quarta-feira, 11 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 10: quinta-feira, 12 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 13: sexta-feira, 13 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Dias únicos após limpeza: ['segunda-feira, 9 de junho de 2025', 'terça-feira, 10 de junho de 2025', 'quarta-feira, 11 de junho de 2025', 'quinta-feira, 12 de junho de 2025', 'sexta-feira, 13 de junho de 2025']
+2025-08-13 14:42:39 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:42:39 (BRT) - INFO - Encontradas 8 linhas de dados
+2025-08-13 14:42:39 (BRT) - INFO - DataFrame criado com 8 linhas
+2025-08-13 14:42:39 (BRT) - WARNING - Categorias duplicadas encontradas na página 2
+2025-08-13 14:42:39 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:42:39 (BRT) - INFO - Criando pivot...
+2025-08-13 14:42:39 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:42:39 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:42:39 (BRT) - INFO - Processamento da página 2 concluído com sucesso!
+2025-08-13 14:42:39 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 3
+==================================================
+2025-08-13 14:42:39 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+quinta-feira, 19 de sexta-feira, 20 de junho
+segunda-feira, 16 de junho terça-feira, 17 de junho quarta-feira, 18 de junho
+junho de 2025 de 2025
+de 2025 de 2025 de 2025
+R...
+2025-08-13 14:42:39 (BRT) - INFO - Encontradas 9 tabelas na página 3
+2025-08-13 14:42:39 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:42:39 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 1: terça-feira, 17 de junho
+de 2025 None
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 4: quinta-feira, 19 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 7: sexta-feira, 20 de junho de 2025
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 10: 
+2025-08-13 14:42:39 (BRT) - DEBUG - Índice 13: 
+2025-08-13 14:42:39 (BRT) - DEBUG - Dias únicos após limpeza: ['terça-feira, 17 de junho\nde 2025 None', 'quinta-feira, 19 de junho de 2025', 'sexta-feira, 20 de junho de 2025']
+2025-08-13 14:42:39 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:42:39 (BRT) - INFO - Encontradas 13 linhas de dados
+2025-08-13 14:42:39 (BRT) - INFO - DataFrame criado com 7 linhas
+2025-08-13 14:42:39 (BRT) - WARNING - Categorias duplicadas encontradas na página 3
+2025-08-13 14:42:39 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:42:39 (BRT) - INFO - Criando pivot...
+2025-08-13 14:42:39 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:42:39 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:42:39 (BRT) - INFO - Processamento da página 3 concluído com sucesso!
+2025-08-13 14:42:39 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 4
+==================================================
+2025-08-13 14:42:40 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+segunda-feira, 23 de junho terça-feira, 24 de junho quarta-feira, 25 de junho quinta-feira, 26 de sexta-feira, 27 de junho
+de 2025 de 2025 de 2025 junho de 2025 de 2025
+C...
+2025-08-13 14:42:40 (BRT) - INFO - Encontradas 6 tabelas na página 4
+2025-08-13 14:42:40 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:42:40 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:42:40 (BRT) - DEBUG - Índice 1: segunda-feira, 23 de junho de 2025
+2025-08-13 14:42:40 (BRT) - DEBUG - Índice 4: terça-feira, 24 de junho de 2025
+2025-08-13 14:42:40 (BRT) - DEBUG - Índice 7: quarta-feira, 25 de junho de 2025
+2025-08-13 14:42:40 (BRT) - DEBUG - Índice 10: quinta-feira, 26 de junho de 2025
+2025-08-13 14:42:40 (BRT) - DEBUG - Índice 13: sexta-feira, 27 de junho de 2025
+2025-08-13 14:42:40 (BRT) - DEBUG - Dias únicos após limpeza: ['segunda-feira, 23 de junho de 2025', 'terça-feira, 24 de junho de 2025', 'quarta-feira, 25 de junho de 2025', 'quinta-feira, 26 de junho de 2025', 'sexta-feira, 27 de junho de 2025']
+2025-08-13 14:42:40 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:42:40 (BRT) - INFO - Encontradas 9 linhas de dados
+2025-08-13 14:42:40 (BRT) - INFO - DataFrame criado com 9 linhas
+2025-08-13 14:42:40 (BRT) - WARNING - Categorias duplicadas encontradas na página 4
+2025-08-13 14:42:40 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:42:40 (BRT) - INFO - Criando pivot...
+2025-08-13 14:42:40 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:42:40 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:42:40 (BRT) - INFO - Processamento da página 4 concluído com sucesso!
+2025-08-13 14:42:40 (BRT) - INFO - 
+############################################################
+PROCESSAMENTO CONCLUÍDO!
+2025-08-13 14:42:40 (BRT) - INFO - Total de páginas processadas: 4
+2025-08-13 14:42:40 (BRT) - INFO - Total de registros: 18
+2025-08-13 14:42:40 (BRT) - INFO - ############################################################
+2025-08-13 14:42:40 (BRT) - INFO - 
+Resumo do DataFrame Final:
+                                 Dia  \
+0  segunda-feira, 2 de junho de 2025   
+1    terça-feira, 3 de junho de 2025   
+2   quarta-feira, 4 de junho de 2025   
+3   quinta-feira, 5 de junho de 2025   
+4    sexta-feira, 6 de junho de 2025   
+
+                                Acompanhamento                  Guarnição  \
+0                  Arroz Branco e Feijão Preto                Aipim souté   
+1                Arroz Branco e Feijão Carioca    Espaguete ao molho sugo   
+2  Arroz Branco/arroz\ncolorido e Feijão Preto       Quirerinha temperada   
+3                  Arroz Branco e Feijão Preto    Batata doce\ncaramelada   
+4                  Arroz Branco e Feijão Preto  Macarrão com ervas\nfinas   
+
+          Prato Principal                                            Saladas  \
+0  Iscas suínas refogadas        Acelga com tomate picado e Beterraba cozida   
+1     Espetinho de frango  Chicória com cenoura\nralada e Chuchu colorido...   
+2        Bife a tomatelli  Alface com rabanete e Grão de bico com cenoura...   
+3         Pernil grelhado       Almeirão com cenoura e Repolho cozido\nFruta   
+4           Frango assado                                 Abobrinha colorida   
+
+                                     Vegetariano  Pagina             Arquivo  
+0                               Omelete de forno       1  cardapio_junho.pdf  
+1                          Entreveiro de legumes       1  cardapio_junho.pdf  
+2  Escondidinho de cabotiá\ncom proteína de soja       1  cardapio_junho.pdf  
+3                       Mini pizza de\nabobrinha       1  cardapio_junho.pdf  
+4                                   Ovo ao molho       1  cardapio_junho.pdf  
+2025-08-13 14:42:40 (BRT) - INFO - Arquivo CSV salvo com sucesso!
+2025-08-13 14:45:21 (BRT) - INFO - 
+############################################################
+INICIANDO PROCESSAMENTO DO ARQUIVO: cardapio_junho.pdf
+############################################################
+2025-08-13 14:45:21 (BRT) - INFO - Total de páginas no PDF: 4
+2025-08-13 14:45:21 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 1
+==================================================
+2025-08-13 14:45:21 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+segunda-feira, 2 de junho de terça-feira, 3 de junho de quarta-feira, 4 de junho quinta-feira, 5 de sexta-feira, 6 de junho
+2025 2025 de 2025 junho de 2025 de 2025
+Acelga...
+2025-08-13 14:45:21 (BRT) - INFO - Encontradas 2 tabelas na página 1
+2025-08-13 14:45:21 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:45:21 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:45:21 (BRT) - DEBUG - Índice 1: segunda-feira, 2 de junho de 2025
+2025-08-13 14:45:21 (BRT) - DEBUG - Índice 4: terça-feira, 3 de junho de 2025
+2025-08-13 14:45:21 (BRT) - DEBUG - Índice 7: quarta-feira, 4 de junho de 2025
+2025-08-13 14:45:21 (BRT) - DEBUG - Índice 10: quinta-feira, 5 de junho de 2025
+2025-08-13 14:45:21 (BRT) - DEBUG - Índice 13: sexta-feira, 6 de junho de 2025
+2025-08-13 14:45:21 (BRT) - DEBUG - Dias únicos após limpeza: ['segunda-feira, 2 de junho de 2025', 'terça-feira, 3 de junho de 2025', 'quarta-feira, 4 de junho de 2025', 'quinta-feira, 5 de junho de 2025', 'sexta-feira, 6 de junho de 2025']
+2025-08-13 14:45:21 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:45:21 (BRT) - INFO - Encontradas 8 linhas de dados
+2025-08-13 14:45:21 (BRT) - INFO - DataFrame criado com 8 linhas
+2025-08-13 14:45:21 (BRT) - WARNING - Categorias duplicadas encontradas na página 1
+2025-08-13 14:45:21 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:45:21 (BRT) - INFO - Criando pivot...
+2025-08-13 14:45:21 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:45:21 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:45:21 (BRT) - INFO - Processamento da página 1 concluído com sucesso!
+2025-08-13 14:45:21 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 2
+==================================================
+2025-08-13 14:45:22 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+segunda-feira, 9 de junho terça-feira, 10 de junho de quarta-feira, 11 de junho quinta-feira, 12 de sexta-feira, 13 de junho
+de 2025 2025 de 2025 junho de 2025 de 2025
+Ac...
+2025-08-13 14:45:22 (BRT) - INFO - Encontradas 6 tabelas na página 2
+2025-08-13 14:45:22 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:45:22 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 1: segunda-feira, 9 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 4: terça-feira, 10 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 7: quarta-feira, 11 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 10: quinta-feira, 12 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 13: sexta-feira, 13 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Dias únicos após limpeza: ['segunda-feira, 9 de junho de 2025', 'terça-feira, 10 de junho de 2025', 'quarta-feira, 11 de junho de 2025', 'quinta-feira, 12 de junho de 2025', 'sexta-feira, 13 de junho de 2025']
+2025-08-13 14:45:22 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:45:22 (BRT) - INFO - Encontradas 8 linhas de dados
+2025-08-13 14:45:22 (BRT) - INFO - DataFrame criado com 8 linhas
+2025-08-13 14:45:22 (BRT) - WARNING - Categorias duplicadas encontradas na página 2
+2025-08-13 14:45:22 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:45:22 (BRT) - INFO - Criando pivot...
+2025-08-13 14:45:22 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:45:22 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:45:22 (BRT) - INFO - Processamento da página 2 concluído com sucesso!
+2025-08-13 14:45:22 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 3
+==================================================
+2025-08-13 14:45:22 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+quinta-feira, 19 de sexta-feira, 20 de junho
+segunda-feira, 16 de junho terça-feira, 17 de junho quarta-feira, 18 de junho
+junho de 2025 de 2025
+de 2025 de 2025 de 2025
+R...
+2025-08-13 14:45:22 (BRT) - INFO - Encontradas 9 tabelas na página 3
+2025-08-13 14:45:22 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:45:22 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 1: terça-feira, 17 de junho
+de 2025 None
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 4: quinta-feira, 19 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 7: sexta-feira, 20 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 10: 
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 13: 
+2025-08-13 14:45:22 (BRT) - DEBUG - Dias únicos após limpeza: ['terça-feira, 17 de junho\nde 2025 None', 'quinta-feira, 19 de junho de 2025', 'sexta-feira, 20 de junho de 2025']
+2025-08-13 14:45:22 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:45:22 (BRT) - INFO - Encontradas 13 linhas de dados
+2025-08-13 14:45:22 (BRT) - INFO - DataFrame criado com 7 linhas
+2025-08-13 14:45:22 (BRT) - WARNING - Categorias duplicadas encontradas na página 3
+2025-08-13 14:45:22 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:45:22 (BRT) - INFO - Criando pivot...
+2025-08-13 14:45:22 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:45:22 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:45:22 (BRT) - INFO - Processamento da página 3 concluído com sucesso!
+2025-08-13 14:45:22 (BRT) - INFO - 
+==================================================
+Iniciando processamento da página 4
+==================================================
+2025-08-13 14:45:22 (BRT) - INFO - Texto extraído (primeiros 200 chars): Cardápio Mês de junho de 2025
+segunda-feira, 23 de junho terça-feira, 24 de junho quarta-feira, 25 de junho quinta-feira, 26 de sexta-feira, 27 de junho
+de 2025 de 2025 de 2025 junho de 2025 de 2025
+C...
+2025-08-13 14:45:22 (BRT) - INFO - Encontradas 6 tabelas na página 4
+2025-08-13 14:45:22 (BRT) - INFO - Procurando por dias de recesso...
+2025-08-13 14:45:22 (BRT) - INFO - Processando cabeçalhos dos dias...
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 1: segunda-feira, 23 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 4: terça-feira, 24 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 7: quarta-feira, 25 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 10: quinta-feira, 26 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Índice 13: sexta-feira, 27 de junho de 2025
+2025-08-13 14:45:22 (BRT) - DEBUG - Dias únicos após limpeza: ['segunda-feira, 23 de junho de 2025', 'terça-feira, 24 de junho de 2025', 'quarta-feira, 25 de junho de 2025', 'quinta-feira, 26 de junho de 2025', 'sexta-feira, 27 de junho de 2025']
+2025-08-13 14:45:22 (BRT) - INFO - Processando corpo da tabela...
+2025-08-13 14:45:22 (BRT) - INFO - Encontradas 9 linhas de dados
+2025-08-13 14:45:22 (BRT) - INFO - DataFrame criado com 9 linhas
+2025-08-13 14:45:22 (BRT) - WARNING - Categorias duplicadas encontradas na página 4
+2025-08-13 14:45:22 (BRT) - DEBUG - Categorias: ['Saladas' 'Acompanhamento' 'Guarnição' 'Vegetariano' 'Prato Principal']
+2025-08-13 14:45:22 (BRT) - INFO - Criando pivot...
+2025-08-13 14:45:22 (BRT) - INFO - Ordenação categórica aplicada com sucesso
+2025-08-13 14:45:22 (BRT) - INFO - Aplicando recessos...
+2025-08-13 14:45:22 (BRT) - INFO - Processamento da página 4 concluído com sucesso!
+2025-08-13 14:45:22 (BRT) - INFO - 
+############################################################
+PROCESSAMENTO CONCLUÍDO!
+2025-08-13 14:45:22 (BRT) - INFO - Total de páginas processadas: 4
+2025-08-13 14:45:22 (BRT) - INFO - Total de registros: 18
+2025-08-13 14:45:22 (BRT) - INFO - ############################################################
+2025-08-13 14:45:22 (BRT) - INFO - 
+Resumo do DataFrame Final:
+                                 Dia  \
+0  segunda-feira, 2 de junho de 2025   
+1    terça-feira, 3 de junho de 2025   
+2   quarta-feira, 4 de junho de 2025   
+3   quinta-feira, 5 de junho de 2025   
+4    sexta-feira, 6 de junho de 2025   
+
+                                Acompanhamento                  Guarnição  \
+0                  Arroz Branco e Feijão Preto                Aipim souté   
+1                Arroz Branco e Feijão Carioca    Espaguete ao molho sugo   
+2  Arroz Branco/arroz\ncolorido e Feijão Preto       Quirerinha temperada   
+3                  Arroz Branco e Feijão Preto    Batata doce\ncaramelada   
+4                  Arroz Branco e Feijão Preto  Macarrão com ervas\nfinas   
+
+          Prato Principal                                            Saladas  \
+0  Iscas suínas refogadas        Acelga com tomate picado e Beterraba cozida   
+1     Espetinho de frango  Chicória com cenoura\nralada e Chuchu colorido...   
+2        Bife a tomatelli  Alface com rabanete e Grão de bico com cenoura...   
+3         Pernil grelhado       Almeirão com cenoura e Repolho cozido\nFruta   
+4           Frango assado                                 Abobrinha colorida   
+
+                                     Vegetariano  Pagina             Arquivo  
+0                               Omelete de forno       1  cardapio_junho.pdf  
+1                          Entreveiro de legumes       1  cardapio_junho.pdf  
+2  Escondidinho de cabotiá\ncom proteína de soja       1  cardapio_junho.pdf  
+3                       Mini pizza de\nabobrinha       1  cardapio_junho.pdf  
+4                                   Ovo ao molho       1  cardapio_junho.pdf  
+2025-08-13 14:45:22 (BRT) - INFO - Arquivo CSV salvo com sucesso!
