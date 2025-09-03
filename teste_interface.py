@@ -276,24 +276,21 @@ def show_cardapio_modal(df_dia, date_column, data_dia, search_term=""):
             st.rerun()
 
 # Carregamento automático do arquivo
-@st.cache_data
-def load_cardapio_data():
-    """Carrega automaticamente o arquivo cardapio_processado.csv"""
-    file_path = "cardapio_processado.csv"
-    
-    # Verifica se o arquivo existe
-    if not os.path.exists(file_path):
-        return None, f"Arquivo {file_path} não encontrado no diretório atual."
+def load_cardapio_from_public_sheets():
+    """Carrega dados de planilha pública SEM cache"""
     
     try:
-        # Carrega o arquivo CSV
-        df = pd.read_csv(file_path)
+        sheet_id = "1P5JxySWEiHc53ixBU7HP1LJ5VVLQczzo"  # Substitua pelo ID real
+        csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv"
+        
+        df = pd.read_csv(csv_url)
         return df, None
+        
     except Exception as e:
-        return None, f"Erro ao carregar o arquivo: {str(e)}"
+        return None, f"Erro ao carregar da planilha pública: {str(e)}"
 
 # Carrega os dados automaticamente
-df, error_message = load_cardapio_data()
+df, error_message = load_cardapio_from_public_sheets()
 
 if error_message:
     st.error(error_message)
