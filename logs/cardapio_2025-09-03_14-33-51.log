@@ -1,0 +1,524 @@
+2025-09-03 14:33:51 (BRT) - INFO - ============================================================
+2025-09-03 14:33:51 (BRT) - INFO - INICIANDO PROCESSAMENTO DE CARDÁPIO
+2025-09-03 14:33:51 (BRT) - INFO - ============================================================
+2025-09-03 14:33:51 (BRT) - INFO - Iniciando processamento do arquivo: seu_arquivo.docx
+2025-09-03 14:33:51 (BRT) - INFO - Índice da tabela: 0
+2025-09-03 14:33:51 (BRT) - ERROR - Erro geral no processamento: Package not found at 'seu_arquivo.docx'
+2025-09-03 14:33:51 (BRT) - ERROR - Erro na função principal: Package not found at 'seu_arquivo.docx'
+2025-09-03 14:33:51 (BRT) - INFO - Iniciando processamento do arquivo: Cardápio de mes setembro.docx
+2025-09-03 14:33:51 (BRT) - INFO - Índice da tabela: 0
+2025-09-03 14:33:51 (BRT) - INFO - Tabela encontrada com 47 linhas
+2025-09-03 14:33:51 (BRT) - DEBUG - Linha 0: ['', 'segunda-feira, 01 setembro de 2025', 'segunda-feira, 01 setembro de 2025', 'terça-feira, 02 setembro de 2025', 'quarta-feira, 03 setembro de 2025', 'quinta-feira, 04 setembro de 2025', 'sexta-feira, 05 setembro de 2025']
+2025-09-03 14:33:51 (BRT) - DEBUG - Linha 1: ['', '', '', '', '', '', '']
+2025-09-03 14:33:51 (BRT) - DEBUG - Linha 2: ['Saladas', 'Alface com cenoura', 'Alface com cenoura', 'Almeirão com pepino', 'Alface com rabanete', 'Acelga com tomate', 'Radite com pepino']
+2025-09-03 14:33:51 (BRT) - DEBUG - Linha 3: ['Saladas', 'Mix grão (milho, ervilha, grão de bico)', 'Mix grão (milho, ervilha, grão de bico)', 'Chuchu   colorido\nFruta', 'Cenoura cozida', 'Repolho cozido\nFruta', 'Trigo e abobrinha  a vinagrete']
+2025-09-03 14:33:51 (BRT) - DEBUG - Linha 4: ['', '', '', '', '', '', '']
+2025-09-03 14:33:52 (BRT) - INFO - Data encontrada na linha 0: segunda-feira, 01 setembro de 2025
+2025-09-03 14:33:52 (BRT) - INFO - Data encontrada na linha 17: segunda-feira,  08 setembro de 2025
+2025-09-03 14:33:52 (BRT) - INFO - Data encontrada na linha 33: segunda-feira, 15 setembro de 2025
+2025-09-03 14:33:52 (BRT) - INFO - Encontradas 3 datas no documento
+2025-09-03 14:33:52 (BRT) - INFO - Processando dia: segunda-feira, 01 setembro de 2025
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 2
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Almeirão com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Alface com rabanete' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Acelga com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Radite com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 3
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Mix grão (milho, ervilha, grão de bico)' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Mix grão (milho, ervilha, grão de bico)' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Chuchu   colorido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Cenoura cozida' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Repolho cozido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Trigo e abobrinha  a vinagrete' adicionado à categoria 'Saladas'
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 5
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Arroz Branco/arroz integral' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 6
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Guarnição' na linha 8
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Quirerinha temperada' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Quirerinha temperada' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Espaguete asso molho sugo' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Legumes confitados' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Aipim souté' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Macarrão ao molho branco' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 10
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Misto de legumes refogados' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Panqueca e proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Mini pizza de beringela' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 11
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Misto de legumes refogados' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Panqueca e proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Mini pizza de beringela' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Prato Principal' na linha 13
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Iscas suínas aceboladas' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Iscas suínas aceboladas' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Frango assado' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Rocambole de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Bife ao molho vermelho' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Strogonoff de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:52 (BRT) - INFO - Cardápio processado para segunda-feira, 01 setembro de 2025:
+2025-09-03 14:33:52 (BRT) - INFO -   Saladas: 6 pratos
+2025-09-03 14:33:52 (BRT) - INFO -   Acompanhamento: 6 pratos
+2025-09-03 14:33:52 (BRT) - INFO -   Guarnição: 6 pratos
+2025-09-03 14:33:52 (BRT) - INFO -   Vegetariano: 6 pratos
+2025-09-03 14:33:52 (BRT) - INFO -   Prato Principal: 6 pratos
+2025-09-03 14:33:52 (BRT) - INFO - Processando dia: segunda-feira,  08 setembro de 2025
+2025-09-03 14:33:52 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 19
+2025-09-03 14:33:52 (BRT) - DEBUG -   Prato 'Almeirão cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Almeirão cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Agrião com Cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Mix de folhas com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Alface com repolho' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Acelga com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 20
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Vinagrete de lentilha' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Vinagrete de lentilha' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Beterraba cozida
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Chuchu cozido' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Cenoura cozida
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Mix grão' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 22
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco/ arroz colorido' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 23
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão carioca' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Guarnição' na linha 25
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Polenta cremosa' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Polenta cremosa' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Cabotiá caramelizada' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Purê de batata ao molho sugo' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Farofa de couve' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Macarrão ao alho e óleo' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 27
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Abobrinha recheada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Escondidinho de batata com proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Espetinho de legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Gratinado de chuchu' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 28
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Abobrinha recheada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Escondidinho de batata com proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Espetinho de legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Gratinado de chuchu' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Prato Principal' na linha 30
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Frango xadrez' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Frango xadrez' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Bife ao molho escuro' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Peixe á milanesa' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Frango ao molho' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Pernil grelhado' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:53 (BRT) - INFO - Cardápio processado para segunda-feira,  08 setembro de 2025:
+2025-09-03 14:33:53 (BRT) - INFO -   Saladas: 6 pratos
+2025-09-03 14:33:53 (BRT) - INFO -   Acompanhamento: 6 pratos
+2025-09-03 14:33:53 (BRT) - INFO -   Guarnição: 6 pratos
+2025-09-03 14:33:53 (BRT) - INFO -   Vegetariano: 6 pratos
+2025-09-03 14:33:53 (BRT) - INFO -   Prato Principal: 6 pratos
+2025-09-03 14:33:53 (BRT) - INFO - Processando dia: segunda-feira, 15 setembro de 2025
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 35
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Alface' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Alface' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Acelga com rabanete' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Chicória com cebola' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Almeirão com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 36
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Lentilha com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Lentilha com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Grão de bico á vinagrete
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Beterraba cozida' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Chuchu cozido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Repolho cozido' adicionado à categoria 'Saladas'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 38
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 39
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão carioca' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Guarnição' na linha 41
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Aipim com ervas finas' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Aipim com ervas finas' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Macarrão á brasileira (com milho e ervilha)' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Batata doce confitada' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Macarrão com ervas finas' adicionado à categoria 'Guarnição'
+2025-09-03 14:33:53 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 43
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Legumes ao molho branco' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:53 (BRT) - DEBUG -   Prato 'Hambúrguer de aveia com legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Refogado de proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Ovo cozido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 44
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Legumes ao molho branco' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Hambúrguer de aveia com legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Refogado de proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Ovo cozido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:33:54 (BRT) - DEBUG - Nova categoria 'Prato Principal' na linha 46
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Frango assado ao molho de mostarda' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Frango assado ao molho de mostarda' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Strogonoff de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Bife bovino acebolado' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Hambúrguer suíno ao molho tomatelli' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:54 (BRT) - DEBUG -   Prato 'Entreveiro (frango, suíno e bovino)' adicionado à categoria 'Prato Principal'
+2025-09-03 14:33:54 (BRT) - INFO - Cardápio processado para segunda-feira, 15 setembro de 2025:
+2025-09-03 14:33:54 (BRT) - INFO -   Saladas: 6 pratos
+2025-09-03 14:33:54 (BRT) - INFO -   Acompanhamento: 6 pratos
+2025-09-03 14:33:54 (BRT) - INFO -   Guarnição: 6 pratos
+2025-09-03 14:33:54 (BRT) - INFO -   Vegetariano: 6 pratos
+2025-09-03 14:33:54 (BRT) - INFO -   Prato Principal: 6 pratos
+2025-09-03 14:33:54 (BRT) - INFO - Processamento concluído. Total de dias processados: 3
+2025-09-03 14:33:54 (BRT) - INFO - Convertendo cardápios para DataFrame
+2025-09-03 14:33:54 (BRT) - INFO - DataFrame criado com 90 linhas e 4 colunas
+2025-09-03 14:33:54 (BRT) - INFO - Colunas: ['data', 'categoria', 'prato', 'ordem']
+2025-09-03 14:33:54 (BRT) - INFO - Primeiras 5 linhas do DataFrame:
+2025-09-03 14:33:54 (BRT) - INFO -   Linha 0: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Mix grão (milho, ervilha, grão de bico)', 'ordem': 1}
+2025-09-03 14:33:54 (BRT) - INFO -   Linha 1: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Mix grão (milho, ervilha, grão de bico)', 'ordem': 2}
+2025-09-03 14:33:54 (BRT) - INFO -   Linha 2: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Chuchu   colorido\nFruta', 'ordem': 3}
+2025-09-03 14:33:54 (BRT) - INFO -   Linha 3: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Cenoura cozida', 'ordem': 4}
+2025-09-03 14:33:54 (BRT) - INFO -   Linha 4: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Repolho cozido\nFruta', 'ordem': 5}
+2025-09-03 14:44:21 (BRT) - INFO - ============================================================
+2025-09-03 14:44:21 (BRT) - INFO - INICIANDO PROCESSAMENTO DE CARDÁPIO
+2025-09-03 14:44:21 (BRT) - INFO - ============================================================
+2025-09-03 14:44:21 (BRT) - INFO - Iniciando processamento do arquivo: Cardápio de mes setembro.docx
+2025-09-03 14:44:21 (BRT) - INFO - Índice da tabela: 0
+2025-09-03 14:44:21 (BRT) - INFO - Tabela encontrada com 47 linhas
+2025-09-03 14:44:21 (BRT) - DEBUG - Linha 0: ['', 'segunda-feira, 01 setembro de 2025', 'segunda-feira, 01 setembro de 2025', 'terça-feira, 02 setembro de 2025', 'quarta-feira, 03 setembro de 2025', 'quinta-feira, 04 setembro de 2025', 'sexta-feira, 05 setembro de 2025']
+2025-09-03 14:44:21 (BRT) - DEBUG - Linha 1: ['', '', '', '', '', '', '']
+2025-09-03 14:44:21 (BRT) - DEBUG - Linha 2: ['Saladas', 'Alface com cenoura', 'Alface com cenoura', 'Almeirão com pepino', 'Alface com rabanete', 'Acelga com tomate', 'Radite com pepino']
+2025-09-03 14:44:21 (BRT) - DEBUG - Linha 3: ['Saladas', 'Mix grão (milho, ervilha, grão de bico)', 'Mix grão (milho, ervilha, grão de bico)', 'Chuchu   colorido\nFruta', 'Cenoura cozida', 'Repolho cozido\nFruta', 'Trigo e abobrinha  a vinagrete']
+2025-09-03 14:44:21 (BRT) - DEBUG - Linha 4: ['', '', '', '', '', '', '']
+2025-09-03 14:44:21 (BRT) - INFO - Data encontrada na linha 0: segunda-feira, 01 setembro de 2025
+2025-09-03 14:44:21 (BRT) - INFO - Data encontrada na linha 17: segunda-feira,  08 setembro de 2025
+2025-09-03 14:44:21 (BRT) - INFO - Data encontrada na linha 33: segunda-feira, 15 setembro de 2025
+2025-09-03 14:44:21 (BRT) - INFO - Encontradas 3 datas no documento
+2025-09-03 14:44:21 (BRT) - INFO - Processando dia: segunda-feira, 01 setembro de 2025
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 2
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Almeirão com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Alface com rabanete' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Acelga com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Radite com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 3
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Mix grão (milho, ervilha, grão de bico)' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Mix grão (milho, ervilha, grão de bico)' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Chuchu   colorido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Cenoura cozida' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Repolho cozido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Trigo e abobrinha  a vinagrete' adicionado à categoria 'Saladas'
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 5
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Arroz Branco/arroz integral' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 6
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Guarnição' na linha 8
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Quirerinha temperada' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Quirerinha temperada' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Espaguete asso molho sugo' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Legumes confitados' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Aipim souté' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Macarrão ao molho branco' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 10
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Misto de legumes refogados' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Panqueca e proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Mini pizza de beringela' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 11
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Misto de legumes refogados' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Panqueca e proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Mini pizza de beringela' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Prato Principal' na linha 13
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Iscas suínas aceboladas' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Iscas suínas aceboladas' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Frango assado' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Rocambole de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Bife ao molho vermelho' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Strogonoff de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:21 (BRT) - INFO - Cardápio processado para segunda-feira, 01 setembro de 2025:
+2025-09-03 14:44:21 (BRT) - INFO -   Saladas: 6 pratos
+2025-09-03 14:44:21 (BRT) - INFO -   Acompanhamento: 6 pratos
+2025-09-03 14:44:21 (BRT) - INFO -   Guarnição: 6 pratos
+2025-09-03 14:44:21 (BRT) - INFO -   Vegetariano: 6 pratos
+2025-09-03 14:44:21 (BRT) - INFO -   Prato Principal: 6 pratos
+2025-09-03 14:44:21 (BRT) - INFO - Processando dia: segunda-feira,  08 setembro de 2025
+2025-09-03 14:44:21 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 19
+2025-09-03 14:44:21 (BRT) - DEBUG -   Prato 'Almeirão cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Almeirão cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Agrião com Cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Mix de folhas com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Alface com repolho' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Acelga com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 20
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Vinagrete de lentilha' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Vinagrete de lentilha' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Beterraba cozida
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Chuchu cozido' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Cenoura cozida
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Mix grão' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 22
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Arroz Branco/ arroz colorido' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 23
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Feijão carioca' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Guarnição' na linha 25
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Polenta cremosa' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Polenta cremosa' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Cabotiá caramelizada' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Purê de batata ao molho sugo' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Farofa de couve' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Macarrão ao alho e óleo' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 27
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Abobrinha recheada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Escondidinho de batata com proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Espetinho de legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Gratinado de chuchu' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 28
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Ovo ao molho caipira (com milho e ervilha)' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Abobrinha recheada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Escondidinho de batata com proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Espetinho de legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Gratinado de chuchu' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Prato Principal' na linha 30
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Frango xadrez' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Frango xadrez' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Bife ao molho escuro' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Peixe á milanesa' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Frango ao molho' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Pernil grelhado' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:22 (BRT) - INFO - Cardápio processado para segunda-feira,  08 setembro de 2025:
+2025-09-03 14:44:22 (BRT) - INFO -   Saladas: 6 pratos
+2025-09-03 14:44:22 (BRT) - INFO -   Acompanhamento: 6 pratos
+2025-09-03 14:44:22 (BRT) - INFO -   Guarnição: 6 pratos
+2025-09-03 14:44:22 (BRT) - INFO -   Vegetariano: 6 pratos
+2025-09-03 14:44:22 (BRT) - INFO -   Prato Principal: 6 pratos
+2025-09-03 14:44:22 (BRT) - INFO - Processando dia: segunda-feira, 15 setembro de 2025
+2025-09-03 14:44:22 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 35
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Alface' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Alface' adicionado à categoria 'Saladas'
+2025-09-03 14:44:22 (BRT) - DEBUG -   Prato 'Acelga com rabanete' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Chicória com cebola' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Almeirão com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 36
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Lentilha com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Lentilha com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Grão de bico á vinagrete
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Beterraba cozida' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Chuchu cozido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Repolho cozido' adicionado à categoria 'Saladas'
+2025-09-03 14:44:23 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 38
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 39
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Feijão carioca' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:44:23 (BRT) - DEBUG - Nova categoria 'Guarnição' na linha 41
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Aipim com ervas finas' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Aipim com ervas finas' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Macarrão á brasileira (com milho e ervilha)' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Batata doce confitada' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Macarrão com ervas finas' adicionado à categoria 'Guarnição'
+2025-09-03 14:44:23 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 43
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Legumes ao molho branco' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Hambúrguer de aveia com legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Refogado de proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Ovo cozido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 44
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Mini pizza de abobrinha' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Legumes ao molho branco' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Hambúrguer de aveia com legumes' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Refogado de proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Ovo cozido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:44:23 (BRT) - DEBUG - Nova categoria 'Prato Principal' na linha 46
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Frango assado ao molho de mostarda' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Frango assado ao molho de mostarda' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Strogonoff de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Bife bovino acebolado' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Hambúrguer suíno ao molho tomatelli' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:23 (BRT) - DEBUG -   Prato 'Entreveiro (frango, suíno e bovino)' adicionado à categoria 'Prato Principal'
+2025-09-03 14:44:23 (BRT) - INFO - Cardápio processado para segunda-feira, 15 setembro de 2025:
+2025-09-03 14:44:23 (BRT) - INFO -   Saladas: 6 pratos
+2025-09-03 14:44:23 (BRT) - INFO -   Acompanhamento: 6 pratos
+2025-09-03 14:44:23 (BRT) - INFO -   Guarnição: 6 pratos
+2025-09-03 14:44:23 (BRT) - INFO -   Vegetariano: 6 pratos
+2025-09-03 14:44:23 (BRT) - INFO -   Prato Principal: 6 pratos
+2025-09-03 14:44:23 (BRT) - INFO - Processamento concluído. Total de dias processados: 3
+2025-09-03 14:44:23 (BRT) - INFO - Convertendo cardápios para DataFrame
+2025-09-03 14:44:23 (BRT) - INFO - DataFrame criado com 90 linhas e 4 colunas
+2025-09-03 14:44:23 (BRT) - INFO - Colunas: ['data', 'categoria', 'prato', 'ordem']
+2025-09-03 14:44:23 (BRT) - INFO - Primeiras 5 linhas do DataFrame:
+2025-09-03 14:44:23 (BRT) - INFO -   Linha 0: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Mix grão (milho, ervilha, grão de bico)', 'ordem': 1}
+2025-09-03 14:44:23 (BRT) - INFO -   Linha 1: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Mix grão (milho, ervilha, grão de bico)', 'ordem': 2}
+2025-09-03 14:44:23 (BRT) - INFO -   Linha 2: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Chuchu   colorido\nFruta', 'ordem': 3}
+2025-09-03 14:44:23 (BRT) - INFO -   Linha 3: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Cenoura cozida', 'ordem': 4}
+2025-09-03 14:44:23 (BRT) - INFO -   Linha 4: {'data': 'segunda-feira, 01 setembro de 2025', 'categoria': 'Saladas', 'prato': 'Repolho cozido\nFruta', 'ordem': 5}
+2025-09-03 14:44:23 (BRT) - INFO - ============================================================
+2025-09-03 14:44:23 (BRT) - INFO - PROCESSAMENTO CONCLUÍDO COM SUCESSO
+2025-09-03 14:44:23 (BRT) - INFO - ============================================================
+2025-09-03 14:44:23 (BRT) - INFO - Convertendo cardápios para DataFrame
+2025-09-03 14:44:23 (BRT) - ERROR - Erro ao converter para DataFrame: string indices must be integers, not 'str'
+2025-09-03 14:49:43 (BRT) - INFO - ============================================================
+2025-09-03 14:49:43 (BRT) - INFO - INICIANDO PROCESSAMENTO DE CARDÁPIO
+2025-09-03 14:49:43 (BRT) - INFO - ============================================================
+2025-09-03 14:49:43 (BRT) - INFO - Iniciando processamento do arquivo: Cardápio de mes setembro.docx
+2025-09-03 14:49:43 (BRT) - INFO - Índice da tabela: 0
+2025-09-03 14:49:43 (BRT) - INFO - Tabela encontrada com 47 linhas
+2025-09-03 14:49:43 (BRT) - DEBUG - Linha 0: ['', 'segunda-feira, 01 setembro de 2025', 'segunda-feira, 01 setembro de 2025', 'terça-feira, 02 setembro de 2025', 'quarta-feira, 03 setembro de 2025', 'quinta-feira, 04 setembro de 2025', 'sexta-feira, 05 setembro de 2025']
+2025-09-03 14:49:44 (BRT) - DEBUG - Linha 1: ['', '', '', '', '', '', '']
+2025-09-03 14:49:44 (BRT) - DEBUG - Linha 2: ['Saladas', 'Alface com cenoura', 'Alface com cenoura', 'Almeirão com pepino', 'Alface com rabanete', 'Acelga com tomate', 'Radite com pepino']
+2025-09-03 14:49:44 (BRT) - DEBUG - Linha 3: ['Saladas', 'Mix grão (milho, ervilha, grão de bico)', 'Mix grão (milho, ervilha, grão de bico)', 'Chuchu   colorido\nFruta', 'Cenoura cozida', 'Repolho cozido\nFruta', 'Trigo e abobrinha  a vinagrete']
+2025-09-03 14:49:44 (BRT) - DEBUG - Linha 4: ['', '', '', '', '', '', '']
+2025-09-03 14:49:44 (BRT) - INFO - Data encontrada na linha 0: segunda-feira, 01 setembro de 2025
+2025-09-03 14:49:44 (BRT) - INFO - Data encontrada na linha 17: segunda-feira,  08 setembro de 2025
+2025-09-03 14:49:44 (BRT) - INFO - Data encontrada na linha 33: segunda-feira, 15 setembro de 2025
+2025-09-03 14:49:44 (BRT) - INFO - Encontradas 3 datas no documento
+2025-09-03 14:49:44 (BRT) - INFO - Processando dia: segunda-feira, 01 setembro de 2025
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 2
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Alface com cenoura' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Almeirão com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Alface com rabanete' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Acelga com tomate' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Radite com pepino' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Saladas' na linha 3
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Mix grão (milho, ervilha, grão de bico)' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Mix grão (milho, ervilha, grão de bico)' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Chuchu   colorido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Cenoura cozida' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Repolho cozido
+Fruta' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Trigo e abobrinha  a vinagrete' adicionado à categoria 'Saladas'
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 5
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Arroz Branco/arroz integral' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Arroz Branco' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Acompanhamento' na linha 6
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Feijão Preto' adicionado à categoria 'Acompanhamento'
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Guarnição' na linha 8
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Quirerinha temperada' adicionado à categoria 'Guarnição'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Quirerinha temperada' adicionado à categoria 'Guarnição'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Espaguete asso molho sugo' adicionado à categoria 'Guarnição'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Legumes confitados' adicionado à categoria 'Guarnição'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Aipim souté' adicionado à categoria 'Guarnição'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Macarrão ao molho branco' adicionado à categoria 'Guarnição'
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 10
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Misto de legumes refogados' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Panqueca e proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Mini pizza de beringela' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Vegetariano' na linha 11
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Ovo mexido' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Misto de legumes refogados' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Panqueca e proteína de soja' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Mini pizza de beringela' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Torta salgada' adicionado à categoria 'Vegetariano'
+2025-09-03 14:49:44 (BRT) - DEBUG - Nova categoria 'Prato Principal' na linha 13
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Iscas suínas aceboladas' adicionado à categoria 'Prato Principal'
+2025-09-03 14:49:44 (BRT) - DEBUG -   Prato 'Iscas suínas aceboladas' adicionado à categoria 'Prato Principal'
+2025-09-03 14:49:45 (BRT) - DEBUG -   Prato 'Frango assado' adicionado à categoria 'Prato Principal'
+2025-09-03 14:49:45 (BRT) - DEBUG -   Prato 'Rocambole de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:49:45 (BRT) - DEBUG -   Prato 'Bife ao molho vermelho' adicionado à categoria 'Prato Principal'
+2025-09-03 14:49:45 (BRT) - DEBUG -   Prato 'Strogonoff de frango' adicionado à categoria 'Prato Principal'
+2025-09-03 14:49:45 (BRT) - INFO - Cardápio processado para segunda-feira, 01 setembro de 2025:
