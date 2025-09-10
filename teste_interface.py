@@ -4,7 +4,6 @@ import calendar
 import locale
 from datetime import datetime
 import re
-import os
 
 # Configurar locale para português (se disponível)
 try:
@@ -236,15 +235,17 @@ def show_cardapio_modal(df_dia, date_column, data_dia, search_term=""):
     
     for _, row in df_dia.iterrows():
         # Mostra cada categoria do cardápio sem caixas brancas
-        categorias = ['Acompanhamento', 'Guarnição', 'Prato Principal', 
-                    'Saladas', 'Vegetariano']
+        categorias = ['Acompanhamento 1','Acompanhamento 2', 'Guarnição', 'Prato Principal', 
+                    'Salada 1', 'Salada 2', 'Vegetariano']
         
         # Ícones para cada categoria
         categoria_icons = {
-            'Acompanhamento': '🍚',
+            'Acompanhamento 1' : '🍚',
+            'Acompanhamento 2' : '🍚',
             'Guarnição': '🥕',
             'Prato Principal': '🍖',
-            'Saladas': '🥗',
+            'Salada 1': '🥗',
+            'Salada 2': '🥗',
             'Vegetariano': '🌱'
         }
         
@@ -276,21 +277,23 @@ def show_cardapio_modal(df_dia, date_column, data_dia, search_term=""):
             st.rerun()
 
 # Carregamento automático do arquivo
-def load_cardapio_from_public_sheets():
-    """Carrega dados de planilha pública SEM cache"""
-    
+def carregarCardapioPorPlanilha(sheet_name):
     try:
-        sheet_id = "1P5JxySWEiHc53ixBU7HP1LJ5VVLQczzo"  # Substitua pelo ID real
-        csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv"
+        # URL formatada corretamente para CSV
+        sheet_id = '1P5JxySWEiHc53ixBU7HP1LJ5VVLQczzo'
+        sheet_name_encoded = sheet_name.replace(' ', '%20')
         
-        df = pd.read_csv(csv_url)
+        url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name_encoded}'
+        
+        # Carrega diretamente com pandas
+        df = pd.read_csv(url)
         return df, None
         
     except Exception as e:
-        return None, f"Erro ao carregar da planilha pública: {str(e)}"
+        return None, f"Erro ao carregar planilha: {str(e)}"
 
 # Carrega os dados automaticamente
-df, error_message = load_cardapio_from_public_sheets()
+df, error_message = carregarCardapioPorPlanilha('202509')
 
 if error_message:
     st.error(error_message)
