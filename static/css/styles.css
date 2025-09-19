@@ -29,9 +29,7 @@ header {
 }
 
 footer {
-    position: bottom;
     width: 100%;
-    align-items: center;
     padding: 50px;
     margin-top: 50px;
     background-color: #ffffffff;
@@ -75,6 +73,11 @@ th {
     }
 }
 
+.col-12 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
 
 .dataTables_wrapper .dataTables_paginate .page-link {
     background-color: var(--color1);
@@ -84,12 +87,12 @@ th {
 }
 
 .dataTables_wrapper .dataTables_paginate .page-link:hover {
-    background-color: var(--color2);
+    background-color: var(--color3);
     color: var(--color6);
 }
 
 .dataTables_wrapper .dataTables_paginate .page-item.active .page-link {
-    background-color: var(--color3); /* cor do botão ativo */
+    background-color: var(--color4); /* cor do botão ativo */
     border-color: var(--color3);
     color: var(--color1);
 }
@@ -98,10 +101,6 @@ th {
     height: 60px;
 }
 
-nav p {
-    margin: 5px 10px;
-    text-align: center;
-}
 
 .card-title {
     color: var(--color2);
@@ -111,15 +110,44 @@ nav p {
     margin: 5px 10px
 }
 
+
+
 footer * {
-    font-weight: bold;
+    margin: 5px;
 }
 
-footer img {
-    height: 70px;
+h5 a, h5 {
+    color: var(--color2) ;
 }
 
-.card-body {
-    margin: 10px;
+footer h5 a:hover,
+footer h5 a:focus {
+  color: var(--color3);
 }
+
+nav a {
+    color: var(--color6);
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--color4);
+}
+
+.icon {
+    color: var(--color2);
+    font-size: 32px;
+}
+
+hr {
+    width: 100vw;
+}
+
+h6 {
+    color: var(--color3) !important;
+    font-size: 18px;
+}
+
+
+
 
