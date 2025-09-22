@@ -1,4 +1,5 @@
 :root {
+    --color0: #ffffffff;
     --color1: #f0f0f0ff;
     --color2: #24D42Aff;
     --color3: #38AB3Cff;
@@ -24,24 +25,16 @@ body {
 header {
     border-bottom: 2px solid #dee2e6;
     padding-bottom: 1rem;
-    background-color: #ffffff;
-    width: 100%;
+    background-color: var(--color0);
 }
 
 footer {
-    width: 100%;
-    padding: 50px;
-    margin-top: 50px;
-    background-color: #ffffffff;
+    background-color: var(--color0);
     color: var(--color6)
 }
 thead, thead * {
     background-color: var(--color3) !important;
     color: var(--color1) !important;
-}
-
-th {
-    font-weight: bold;
 }
 
 .card {
@@ -73,11 +66,6 @@ th {
     }
 }
 
-.col-12 {
-    margin: 0;
-    margin-bottom: 20px;
-}
-
 
 .dataTables_wrapper .dataTables_paginate .page-link {
     background-color: var(--color1);
@@ -101,7 +89,6 @@ th {
     height: 60px;
 }
 
-
 .card-title {
     color: var(--color2);
 }
@@ -109,8 +96,6 @@ th {
 .dataTables_lenght, .dataTables_filter {
     margin: 5px 10px
 }
-
-
 
 footer * {
     margin: 5px;
@@ -139,14 +124,12 @@ nav a:focus {
     font-size: 32px;
 }
 
-hr {
-    width: 100vw;
-}
-
 h6 {
-    color: var(--color3) !important;
+    color: var(--color2) !important;
     font-size: 18px;
 }
+
+
 
 
 

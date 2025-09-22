@@ -19,27 +19,27 @@
 </head>
 
 <body>
-    <header class="text-center p-3 bg-light shadow-sm">
+    <header class="text-center p-3 bg-light shadow-sm w-100">
         <div class="container">
             <div class="row align-items-center">
 
                 <!-- Logo -->
-                <div class="col-12 col-md-3 text-md-start">
+                <div class="col-12 col-md-3 text-md-start my-2">
                     <a href="https://videira.ifc.edu.br/" class="text-decoration-none fw-bold">
-                        <img src="{{ url_for('static', filename='img/logoif.png') }}" alt="Logo"
+                        <img src="{{ url_for('static', filename='img/logoif.png') }}" alt="Logo do IFC Videira"
                             class="img-fluid img-top">
                     </a>
                 </div>
 
                 <!-- Título -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 my-2">
                     <h1 class="">Cardápio do Refeitório</h1>
                 </div>
 
-                <!-- Navegação -->
-                <div class="col-12 col-md-3 mt-2 mt-md-0">
-                    <img src="{{ url_for('static', filename='img/logo-saborecia.png') }}" alt="Logo"
-                        class="img-fluid img-top">
+                <!-- Logo -->
+                <div class="col-12 col-md-3 mt-2 mt-md-0 my-2 text-md-end">
+                    <img src="{{ url_for('static', filename='img/logo-saborecia.png') }}"
+                        alt="Logo do Sabor e Cia - Cozinha" class="img-fluid img-top ">
                 </div>
 
             </div>
@@ -49,6 +49,7 @@
 
         <div class="container">
             <div class="row align-items-right">
+                <!-- Em caso de futura implementação de mais páginas -->
                 <nav>
                     <ul class="list-unstyled d-flex gap-3 m-0">
                         <a href="" class="text-decoration-none">
@@ -104,49 +105,50 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="w-100 p-5 mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4">
+                <!-- Fábrica de Software -->
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-between mb-2 mt-0 mx-0">
                     <h5><a href="https://fsw-ifc.brdrive.net/" class="text-decoration-none fw-bold">Fábrica de
                             Software</a></h5>
                     <p>Transformando Ideias em Soluções</p>
                     <p>© Fábrica de Software - IFC Videira - 2025</p>
-                    <ul class="list-unstyled d-flex gap-3 m-0">
-                        <li>
-                            <a href="https://www.instagram.com/fsw.ifcvideira/">
-                                <i class="fa fa-instagram icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/fabricaSoftwareVideira">
-                                <i class="fa fa-github icon"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-
+                    <div class="d-flex gap-2 align-items-center">
+                        <a href="https://www.instagram.com/fsw.ifcvideira/">
+                            <i class="fa fa-instagram icon"></i>
+                        </a>
+                        <a href="https://github.com/fabricaSoftwareVideira">
+                            <i class="fa fa-github icon"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
+
+
+                <!-- IFC Campus Videira -->
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-between mb-2 mt-0 mx-0">
                     <h5><a href="https://videira.ifc.edu.br/" class="text-decoration-none fw-bold">IFC Campus
                             Videira</a></h5>
                     <p>Rodovia SC 135, km 125 - Bairro Campo Experimental - CEP 89564-590 - Videira - SC</p>
                     <p>(49) 3533-4900</p>
+                    <div class="d-flex gap-2 align-items-center">
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
+
+                <!-- Sabor e Cia -->
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-between mb-2 mt-0 mx-0">
                     <h5>Sabor e Cia</h5>
                     <p>Cardápio elaborado por Luciana Castro Brum</p>
-                    <ul class="list-unstyled d-flex gap-3 m-0">
-                        <li>
-                            <a href="https://www.instagram.com/sabor_e_cia_ifc/">
-                                <i class="fa fa-instagram icon"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="d-flex gap-2 align-items-center">
+                        <a href="https://www.instagram.com/sabor_e_cia_ifc/">
+                            <i class="fa fa-instagram icon"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
 
 
     <script>
