@@ -129,6 +129,11 @@ h6 {
     font-size: 18px;
 }
 
+footer a i:hover,
+footer a i:focus {
+  color: var(--color3);
+}
+
 
 
 
